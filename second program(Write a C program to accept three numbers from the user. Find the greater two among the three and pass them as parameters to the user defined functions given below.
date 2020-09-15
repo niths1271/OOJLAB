@@ -1,0 +1,72 @@
+#include<stdio.h>
+double sumaver(int a ,int b);
+void printeven (int n1, int n2);
+void main()
+{
+    int a, b, c;
+int l1,l2;
+    printf("Enter 3 numbers:\n");
+    scanf("%d%d%d", &a, &b, &c);
+    if(a >= b && a >= c)
+    {
+		l1=a;
+        if(b >= c)
+           l2=b;
+        else
+            l2=c;
+    }
+    else if(b >= a && b >= c)
+    {
+		    l1=b;
+        if(a >= c)
+            l2=a;
+        else
+            l2=c;  
+    }
+    else if(c >=a && c>=b)
+    {
+       l1=c;
+     if(a>=b)
+       l2=a;
+    else
+        l2=b;
+	}
+	printf("the greater among three numbers are %d %d\n",l1,l2);
+double avg=sumaver(l1,l2);
+printeven(l1,l2);
+printf("the average is %f\n",avg);
+}
+double sumaver(int a,int b)
+{
+	int s=a+b;
+	printf("the sum is %d\n",s);
+	double av=s/2;
+	return av;
+}
+void printeven(int n2,int n1)
+{
+	int i=0;
+	if(n1%2==0)
+	{
+		for(i=n1;i<n2;i=i+2)
+		{
+			printf("%d",i);
+		}
+	}
+	else
+	{
+		int i=0;
+		for(i=n1+1;i<n2;i=i+2)
+		{
+			printf("%d",i);
+		}
+	}
+}
+
+	
+
+
+
+
+
+   
