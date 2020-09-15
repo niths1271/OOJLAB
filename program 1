@@ -1,0 +1,78 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int a,b,c=11;
+	printf("enter the first number\n");
+	scanf("%d",&a);
+	printf("enter the second number\n");
+	scanf("%d",&b);
+	while(c!=0)
+	{
+	printf("enter the choice\n");
+	printf("1-addition \n 2-substraction \n 3-mutiplication \n 4-division");
+	printf("5-greatest of nos \n 6-smallest of nos \n 7-if equal \n 8-not equal \n 9-modulus \n 10-power\n");
+	scanf("%d",&c);
+	switch(c)
+	{
+		case 1: ;
+		      int s=a+b;
+		      printf("%d",s);
+		      break;
+		case 2: ;
+		      int su=a-b;
+		      printf("%d",su);
+		      break;
+		 case 3: ;
+		      int m=a*b;
+		      printf("%d",m);
+		      break;
+		 case 4: ;
+		      int d=a/b;
+		      printf("%d",d);
+		      break;
+		 case 5:
+		      if(a>b)
+		      printf("%d",a);
+		       else
+		      printf("%d",b);
+		      break;
+		 case 6:
+		    if(a<b)
+		      printf("%d",a);
+		       else
+		      printf("%d",b);
+		      break;
+		case 7:
+		      if(a==b)
+		      printf("numbers r equal\n");
+		      break;
+		case 8:
+		      if(a!=b)
+		      printf("numbers r not equal\n");
+		      break;
+		case 9: ;
+		      int r=a%b;
+		      printf("%d",r);
+		      break;
+		case 10: ;
+		      int p= pow(a,b);
+		      printf("%d",p);
+		      break;
+		case 11:
+		      printf("thank you");
+		      break;
+		 default  :
+		      printf("enter the correct choice\n");
+		  }
+	  }
+  }
+  
+	                   
+		      
+		      
+
+		 
+		     
+		                 
+		      
