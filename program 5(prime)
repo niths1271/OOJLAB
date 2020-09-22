@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int n,m;
+	int i,j;
+	int c=0;
+	printf("enter the number n\n");
+	scanf("%d",&n);
+	printf("enter the number m\n");
+	scanf("%d",&m);
+	for(i=n;i<=m;i++)
+	{
+		for(j=2;j<=(i/2);j++)
+		{
+			if(i%j==0)
+			{
+			 c++;
+			}
+		}
+			if(c < 1)
+			printf("%d\n",i);
+			c=0;
+		}
+		
+	}
+	
+		
+		
+		
+	
+
+	
