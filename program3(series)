@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,n;
+	int count=1;
+	printf("enter the row number\n");
+	scanf("%d",&n);
+	printf("the series is\n");
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("%d",count++);
+		}
+	printf("\n");
+}
+}
+
